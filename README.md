@@ -36,3 +36,55 @@ git branch -M main
 git remote add origin https://github.com/jm84/AngularFundamentalMyStore.git
 git push -u origin main
 ```
+
+## Requisites
+
+```
+node -v
+npm -v
+npm -g @angular/cli
+Crea tu primer proyecto: ng new my-project
+
+Ejecuta el servidor de desarrollo: ng serve
+Lanzar el servidor en un puerto especifico: ng serve -o --port=3500
+
+ng version dentro del proyecto para ver las versiones que tenemos en el proyecto.
+```
+
+## Estructura
+
+```
+node_modules: Todo proyecto de Javascript posee este directorio donde se almacenan las librerías y dependencias que se descarguen con NPM.
+src: Directorio principal del proyecto donde encontramos:
+app: Directorio donde guardaremos todo el código fuente de Angular.
+assets: Directorio para imágenes y otros recursos que la app necesita.
+environments: Directorio de ambientes, por defecto viene con desarrollo y producción.
+favicon.ico: Ícono por defecto que tendrá la pestaña del navegador.
+index.html: Archivo HTML principal desde donde se construye toda la aplicación.
+main.ts: Archivo principal para la configuración de Angular.
+polyfills.ts: Librería para que Angular funcione en navegadores viejos y que la aplicación sea retro compatible.
+styles.scss: Archivo principal de estilos.
+test.ts: Archivo principal para lanzar el ambiente de pruebas de Angular.
+.browserslistrc: Lista de navegadores y sus versiones que permite configurar la compatibilidad de la aplicación con cada uno.
+.editorconfig: Permite autoformatear los archivos, espacios, indentación, etc. Hay que tener instalado la extensión en el editor.
+.gitignore: Indicarle a GIT qué archivos/directorios ignorar.
+angular.json: Archivo principal con toda la configuración del proyecto Angular.
+karma.conf.js: Archivo de configuración de Karma. Karma es un task runner para correr pruebas unitarias.
+package-lock.json: Describe el las dependencias exactas que se generaron en la instalación del proyecto.
+package.json: Archivo para el manejo de dependencias, scripts y metadatos relevantes para el proyecto.
+README.md: Archivo markdown para la documentación del proyecto.
+tsconfig.app.json: Archivo principal para la configuración de TypeScript.
+tsconfig.json: Extensión con más configuraciones de TypeScript.
+tsconfig.spec.json: Configuración de TypeScript pero para el ambiente de pruebas.
+
+```
+
+## Extensiones VS Code
+
+-Angular Language Service
+-EditorConfig for Visual Studio Code
+
+## Crear archivo .nvmrc
+
+en el indicamos la versino de node que utiliza el proyecto para que la conozcan otros desarrolladores.
+-utilizandon: node -v use
